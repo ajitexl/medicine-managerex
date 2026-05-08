@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // const api = axios.create({ baseURL: 'http://localhost:8000' })
 
-const api = axios.create({ baseURL: 'https://medicine-manager-api.onrender.com' })
+const api = axios.create({ baseURL: 'https://medicine-managerex.onrender.com' })
 
 export const getDashboard = () => api.get('/medicines/dashboard').then(r => r.data)
 export const getAllMedicines = () => api.get('/medicines').then(r => r.data)
